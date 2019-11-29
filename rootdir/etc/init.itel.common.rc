@@ -1,0 +1,21 @@
+on boot
+    chmod 0664 /sys/devices/platform/soc/soc:ap-ahb/20200000.usb/host_enable
+    chown system system /sys/devices/platform/soc/soc:ap-ahb/20200000.usb/host_enable
+    chmod 0664 /sys/devices/platform/soc/soc:ap-ahb/20200000.usb/otg_status
+    chown system system /sys/devices/platform/soc/soc:ap-ahb/20200000.usb/otg_status
+    chmod 0664 /sys/devices/platform/soc/soc:ap-ahb/20200000.usb/is_support_otg
+    chown system system /sys/devices/platform/soc/soc:ap-ahb/20200000.usb/is_support_otg
+    chown 0664 /proc/lcd_cmd/display_timings
+    chown system system /proc/lcd_cmd/display_timings
+    chown 0664 /proc/lcd_cmd/power_off_sequence
+    chown system system /proc/lcd_cmd/power_off_sequence
+    chown 0664 /proc/lcd_cmd/power_on_sequence
+    chown system system /proc/lcd_cmd/power_on_sequence
+    chown 0664 /proc/lcd_cmd/suspend_cmd
+    chown system system /proc/lcd_cmd/suspend_cmd
+    chown 0664 /proc/lcd_cmd/resume_cmd
+    chown system system /proc/lcd_cmd/resume_cmd
+    chown 0664 /proc/lcd_cmd/init_cmd
+    chown system system /proc/lcd_cmd/init_cmd
+    chown system system /sys/class/power_supply/battery/transsion_charge_type
+    chown system system /sys/transsion/misc/fp_match

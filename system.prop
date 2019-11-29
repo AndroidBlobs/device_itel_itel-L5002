@@ -1,0 +1,88 @@
+#
+# from device/transsion/L5002/system_ro.prop
+#
+#ITEL_SYSTEM_IB_18642306 Skay.Zhao add for W5005 CTS
+ro.notsupport.hwpin=true
+#
+# from device/transsion/common/sp9832e/system_ro.prop
+#
+#add for google sound settings
+ro.config.google.sound=1
+
+# Disable the lock screen wallpaper
+ro.lockwallpaper.enable=true
+
+#Lucid PowerXtend Iris enabled, 0 for not support, 1 for enabled, 2 for disabled
+ro.iris.enabled=2
+
+#
+# from device/sprd/sharkle/sp9832e_1h10_go/system.prop
+#
+# Default density config, 240 for WVGA
+#ro.sf.lcd_density=240
+#ro.sf.lcd_width=54
+#ro.sf.lcd_height=96
+ro.product.hardware=sp9832e_1h10_go
+ro.vendor.audio.product.hardware=sp9832e_1h10_go
+# Set Opengl ES Version
+#ro.opengles.version=196609
+
+# ro.fm.chip.port.UART.androidm=true
+
+# FRP property for pst device
+ro.frp.pst=/dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/persist
+
+#enable audio nr tuning
+ro.vendor.audio_tunning.nr=1
+
+# Disable the long screenshot
+ro.longscreenshot.enable=false
+
+#config dreamcamera
+persist.sys.cam.battery.flash = 10
+persist.sys.cam.sfv.alter=true
+persist.sys.cam.normalhdr=true
+persist.sys.cam.wide.frame.gap=2
+persist.sys.cam.3dnr=true
+persist.sys.cam.filter.version=2
+persist.sys.cam.beauty.fullfuc=false
+persist.sys.cam.fr.blur.version=1
+
+#Enable sdcardfs feature
+ro.sys.sdcardfs=true
+persist.sys.sdcardfs=force_on
+
+#Disable assistant touch
+ro.product.assistanttouch=false
+
+#add for rotation animation scale
+sys.rotation.animscale=0.5
+
+#add for performance
+ro.lmk.critical=210
+ro.lmk.critical_upgrade=true
+ro.lmk.downgrade_pressure=60
+ro.lmk.medium=700
+ro.lmk.upgrade_pressure=40
+ro.lmk.watermarkenhanced=true
+pm.dexopt.downgrade_after_inactive_days=10
+
+#add for performance
+ro.lmk.vmpressurenhanced=true
+
+#enable uififo
+sys.use_fifo_ui=1
+#
+# from device/transsion/common/sp9832e/system_other.prop
+#
+#add for sprd recents
+persist.recents.sprd=1
+
+# IB-18640123-John, 2018-1-9, disable rescue
+persist.sys.disable_rescue=true
+#
+# from device/transsion/L5002/system_other.prop
+#
+qemu.hw.mainkeys=1
+
+#
